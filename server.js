@@ -17,6 +17,7 @@ mongoose.connect(config.DBURL, {
 }).catch(err => {
     console.log(`Database connection faild ${err}`)
 })
+mongoose.Promise = global.Promise;
 
 
 
